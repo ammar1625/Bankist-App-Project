@@ -1,0 +1,116 @@
+/*global styles*/
+*{
+   margin: 0;
+   padding: 0;
+   font-family: "Roboto";
+
+}
+
+/*body styles*/
+body
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 243, 243);
+    height: 100%;
+}
+
+/*header styles*/
+
+.header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 30px;
+}
+
+.welcome-message-container
+{
+    font-size: 19px;
+    color: rgb(56, 56, 56);
+
+    font-family: "Roboto";
+    font-weight: 500;
+
+    height: 50px;
+    width: 260px;
+}
+
+.welcom-message , .client-name
+{
+    opacity: 0;
+
+    transition: all 1s;
+}
+
+.logo-container
+{
+    height:80px ;
+    width:130px ;
+}
+
+.logo
+{
+    width: 120px;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.logo:hover
+{
+    width: 130px;
+}
+
+.log-in-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+.user-input  , .pin-input
+{
+    border: none;
+    outline: none;
+    height: 39px;
+    width: 80px;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    font-family: "Roboto";
+    letter-spacing: -1px;
+    text-align: center;
+
+    transition: all 0.3s;
+}
+
+.user-input:focus,.pin-input:focus
+{
+   
+    outline: 2px solid rgba(179, 178, 178, 0.548);
+    height: 37px;
+    width: 78px;
+}
+
+.log-in-btn
+{
+    border: none;
+    background-color: transparent;
+
+    font-size: 35px;
+
+    transition: all 0.3s;
+}
+
+.log-in-btn:hover
+{
+   color: rgba(0, 0, 0, 0.479);
+   cursor: pointer;
+}
+

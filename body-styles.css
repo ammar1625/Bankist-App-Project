@@ -1,0 +1,398 @@
+
+/*body container*/
+.body-outer-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/*inner body container*/
+.body-inner-container
+{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 100%;
+    opacity: 0;
+   
+   transition: all 2s;
+
+    
+
+}
+
+/*header body part*/
+.header-body
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 40px;
+
+}
+
+.balance
+{
+    font-size: 50px;
+    color: rgb(56, 56, 56);
+
+
+}
+
+.label
+{
+    font-size: 30px;
+    color: rgb(56, 56, 56);
+
+}
+
+.date-time , .date-time-label
+{
+    font-size: 18px;
+    color: rgb(56, 56, 56);
+
+}
+
+
+/*Main body*/
+.main-body
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    height: 80%;
+    width: 100%;
+}
+
+/*transactions history section*/
+.transactions-container
+{
+    width: 54%;
+    height: 530px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    overflow-y:scroll;
+
+    
+    background-color: white;
+
+}
+
+.transaction
+{
+    width: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.26);
+   padding: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transaction-infos-container
+{
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.transaction-ammount-container
+{
+    margin-right: 20px;
+    font-weight: 600;
+    color: rgb(59, 59, 59);
+}
+
+
+.transaction-type
+{
+    background-color: rgba(4, 131, 4, 0.712);
+    color: white;
+    border-radius: 15px;
+
+    font-size: 15px;
+    font-weight: 500;
+    padding: 7px 10px;
+    
+    
+}
+
+.transaction-date
+{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(56, 56, 56);
+}
+
+.transaction-ammount
+{
+    font-size: 19px;
+    font-weight: 500;
+    color: rgb(56, 56, 56);
+}
+
+/*actions section*/
+
+.actions-container
+{
+    width: 44%;
+    height: 530px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.transfer-container,.close-account-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+
+    padding: 20px 12px;
+    border-radius: 10px;
+}
+
+.transfer-container
+{
+ background-image: linear-gradient(to left top , rgb(255,176,3),rgb(255,203,3));
+}
+
+.close-account-container
+{
+    background-image: linear-gradient(to left top , rgb(229,42,90),rgb(255,88,95));
+}
+
+
+.loan-container
+{
+    background-image: linear-gradient(to left top , rgb(57,179,133),rgb(155,225,93));
+}
+
+.loan-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    padding: 20px 12px;
+
+    border-radius: 10px;
+
+
+}
+
+
+.inputs-div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 79%;
+    padding: 15px 15px;
+}
+
+.loan-inputs-div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 45%;
+    padding: 15px 15px;
+}
+
+.title-container
+{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 11px 11px;
+}
+
+.actions-container h2
+{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.destination-input , .ammount-input , .loan-ammount-input , .comfirm-user-input , .comfirm-pin-input
+{
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 110px;
+    border-radius: 9px;
+    padding-left:40px ;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.destination-input , .ammount-input
+{
+ background-image: linear-gradient(to left top , rgba(255, 175, 3, 0.534),rgba(255, 205, 3, 0.438));
+
+}
+
+.loan-ammount-input 
+{
+    background-image: linear-gradient(to left top , rgba(57, 179, 132, 0.404),rgba(154, 225, 93, 0.39));
+
+}
+
+.comfirm-user-input , .comfirm-pin-input
+{
+    background-image: linear-gradient(to left top , rgba(229, 42, 89, 0.418),rgba(255, 88, 96, 0.486));
+
+}
+
+.send-btn , .request-btn , .close-account-btn 
+{
+    border: none;
+    height: 30px;
+    width: 50px;
+    border-radius: 9px; 
+    background-color: white;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.4s;
+}
+
+.send-btn:hover
+{
+    color: rgba(0, 0, 0, 0.479);
+   cursor: pointer;
+}
+
+.request-btn:hover
+{
+    color: rgba(0, 0, 0, 0.479);
+   cursor: pointer;
+}
+
+.close-account-btn:hover
+{
+    color: rgba(0, 0, 0, 0.479);
+   cursor: pointer;
+
+}
+
+.destination-div , .ammount-div , .loan-ammount-div , .comfirm-user-div , .comfirm-pin-div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center; 
+}
+
+/*footer body*/
+.footer-body
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+    padding-bottom: 10px;
+}
+
+.assets-infos-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
+    
+}
+
+.operation
+{
+    font-size: 14px;
+    font-weight: 500;
+   
+
+}
+
+.ammount
+{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.in-ammount , .intrest-ammount ,.symbol
+{
+    color: rgba(2, 110, 2, 0.801);
+}
+
+.out-ammount,.out-symbol
+{
+    color: rgba(255, 0, 0, 0.726);
+}
+
+.symbol
+{
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.sort-btn
+{
+    border: none;
+    height: 30px;
+    width: 50px;
+    border-radius: 9px; 
+    background-color: white;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.4s;
+
+}
+
+.sort-btn:hover
+{
+    color: rgba(0, 0, 0, 0.479);
+    cursor: pointer;
+}
+
+
+
+.count-down-message
+{
+    font-size: 13px;
+    font-weight: 500;
+    position: relative;
+    left: 25px;
+}
+
+.timer
+{
+    font-size: 15px;
+    font-weight: 600;   
+}
+
+
+
+
+
+

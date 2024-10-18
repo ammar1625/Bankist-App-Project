@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="header-styles.css" rel="stylesheet">
+    <link href="body-styles.css" rel="stylesheet">
+    <link href="wise-green.png" rel="icon" type="image/png" >
+    <title> Bankist App</title>
+</head>
+<body>
+    <!--header container-->
+    <div class="header">
+
+        <!--welcome message container-->
+        <div class="welcome-message-container">
+            <span class="welcom-message">Good Morning, <span class="client-name">Ammar</span>!</span
+            >
+        </div>
+
+        <!--logo container-->
+        <div class="logo-container"> <img class="logo" src="wise-green.png"></div>
+
+        <!--log-in container -->
+        <div class="log-in-container">
+
+            <input type="text" class="user-input" placeholder="User">
+            <input type="text" class="pin-input" placeholder="PIN" maxlength="4">
+            <button class="log-in-btn">&#10145;</button>
+
+        </div>
+    </div>
+
+
+    <!--body section-->
+    <div class="body-outer-container">
+
+        <div class="body-inner-container">
+                    <!--header-body-->
+                <div class="header-body">
+
+                    <div class="date-label-container">
+                        <h1 class="label">Current Balance</h1>
+                        <h3 class="date-time-label">As Of <span class="date-time">9/16/2024</span></h1>
+                    </div>
+
+                    <div class="balance-container">
+                        <h1 class="balance"><span class="assets">20000 </span><span class="currency"> $</span></h1>
+                    </div>
+                </div>
+
+                <!--main body-->
+                <div class="main-body">
+
+                    <div class="transactions-container">
+
+                       
+                       <!--  <div class="transaction">
+
+                           <div class="transaction-infos-container">
+
+                            <span class="transaction-type"><span class="transaction-number">1</span> deposit </span>
+                            <span class="transaction-date">09/17/2024</span>
+
+                           </div>
+
+                           <div class="transaction-ammount-container">
+                                <span class="transaction-ammount">1300 <span class="transaction-currency"> $</span></span>
+                           </div>
+                        </div>
+                        
+                        -->
+
+                    </div>
+
+                    <div class="actions-container">
+
+                        <div class="transfer-container">
+
+                            <div class="title-container">Transfere Money</div>
+
+                            <div class="inputs-div">
+                                <div class="destination-div">
+                                     <input type="text" class="destination-input">
+                                     <h2>Transfer to</h2>
+                                </div>
+                               
+                                <div class="ammount-div">
+                                      <input type="number" class="ammount-input">
+                                     <h2>Ammount</h2>
+
+                                </div>
+
+                                <button class="send-btn">&#10145;</button>
+                            </div>
+
+                        </div>
+
+                        <div class="loan-container">
+
+                            <div class="title-container">Request Loan</div>
+
+                            <div class="loan-inputs-div">
+                                <div class="loan-ammount-div">
+                                     <input type="number" class="loan-ammount-input">
+                                     <h2>Ammount</h2>
+                                </div>
+                               
+                                <button class="request-btn">&#10145;</button>
+                            </div>
+                            
+                        </div>
+
+                        <div class="close-account-container">
+
+                            <div class="title-container">Close Account</div>
+
+                            <div class="inputs-div">
+
+                                <div class="comfirm-user-div">
+                                      <input type="text" class="comfirm-user-input">
+                                     <h2>Comfirm user</h2>
+
+                                </div>
+
+                                <div class="comfirm-pin-div">
+                                     <input type="text" class="comfirm-pin-input">
+                                     <h2>Comfirm pin</h2>
+
+                                </div>
+ 
+                                <button class="close-account-btn">&#10145;</button>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!--footer body-->
+                <div class="footer-body">
+
+                    <div class="assets-infos-container">
+
+                        <div class="deposits-container">
+                            <p class="operation">IN  :<span class="ammount in-ammount"> 25000 </span><span class="symbol currency">  $</span></p>
+                        </div>
+
+                        <div class="withdrawal-container">
+                            <p class="operation">OUT  :<span class="ammount out-ammount"> 5000 </span><span class="symbol out-symbol currency">  $</span></p>
+
+                        </div>
+
+                        <div class="intrest-container">
+                            <p class="operation">INTREST  : <span class="ammount intrest-ammount"> 300 </span><span class="symbol currency">  $</span></p>
+
+                        </div>
+
+                        <div class="sort-container">
+                            <button class="sort-btn">&#8595; Sort</button>
+                        </div>
+
+                    </div>
+
+                    <div class="count-down-container">
+                        <p class="count-down-message">you will be logged out in : <span class="timer"></span></p>
+                    </div>
+
+                </div>
+
+        </div>
+       
+
+
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
